@@ -1,0 +1,48 @@
+{
+    "name": "kanbanboard",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "jest",
+        "watch": "jest --watch .js",
+        "build": "webpack",
+        "dev": "webpack serve"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/HammadSiddique/KanbanBoard.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/HammadSiddique/KanbanBoard/issues"
+    },
+    "homepage": "https://github.com/HammadSiddique/KanbanBoard#readme",
+    "devDependencies": {
+        "@babel/core": "^7.17.10",
+        "@babel/plugin-transform-modules-commonjs": "^7.17.9",
+        "@babel/preset-env": "^7.17.10",
+        "babel-eslint": "^10.1.0",
+        "babel-jest": "^28.0.3",
+        "css-loader": "^6.7.1",
+        "eslint": "^7.32.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-plugin-import": "^2.26.0",
+        "hint": "^6.2.0",
+        "html-webpack-plugin": "^5.5.0",
+        "jest": "^28.0.3",
+        "style-loader": "^3.3.1",
+        "stylelint": "^13.13.1",
+        "stylelint-config-standard": "^21.0.0",
+        "stylelint-csstree-validator": "^1.9.0",
+        "stylelint-scss": "^3.21.0",
+        "webpack": "^5.72.0",
+        "webpack-cli": "^4.9.2",
+        "webpack-dev-server": "^4.8.1"
+    },
+    "dependencies": {
+        "lodash": "^4.17.21"
+    }
+}
