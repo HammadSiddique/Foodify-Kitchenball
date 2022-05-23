@@ -1,16 +1,17 @@
 {
-    "name": "KanbanBoard",
+    "name": "kanbanboard",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "jest",
+        "watch": "jest --watch .js",
         "build": "webpack",
         "dev": "webpack serve"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/HammadSiddique/KanbanBoard.git"
+        "url": "git+https://github.com/HammadSiddique/KanbanBoard.git"
     },
     "keywords": [],
     "author": "",
@@ -20,6 +21,7 @@
     },
     "homepage": "https://github.com/HammadSiddique/KanbanBoard#readme",
     "devDependencies": {
+        "jest": "^28.0.3",
         "css-loader": "^6.7.1",
         "html-webpack-plugin": "^5.5.0",
         "style-loader": "^3.3.1",
