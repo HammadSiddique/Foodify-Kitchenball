@@ -25,3 +25,20 @@ body {
   font-size: 1rem;
   cursor: pointer;
 }
+
+footer {
+  width: fit-content;
+  margin: auto auto 0 auto;
+}
+
+a {
+  color: #2a7703;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+a:hover {
+  font-size: 1.5rem;
+
+  /* transform: scale(2); */
+}
