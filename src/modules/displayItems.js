@@ -1,3 +1,5 @@
+// import getComments from './comment.js';
+
 const displayCards = () => {
   const recipeCards = document.querySelector('.recipe-cards');
   fetch('https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegetarian')
@@ -21,5 +23,12 @@ const displayCards = () => {
       });
     });
 };
+
+// const renderComents = () => {
+//   getComments();
+// };
+
+// const commentBtn = document.querySelector('.coomment-btn');
+// commentBtn.addEventListener('click', renderComents);
 
 export default displayCards;

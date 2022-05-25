@@ -1,29 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+// const invloveUrl = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/';
+// const appKey = 'TVh1v8c5aHUNyfocTFww';
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <title>Foodify Kitchenball</title>
-<script defer src="main.bundle.js"></script></head>
+// const getComments = async(id) => {
+//     const response = await fetch(`${invloveUrl}/apps/${appKey}/comments?item_id=52807`);
+//     const data = await response.json();
+//     return data.length > 0 ? data : [];
+// };
 
-<body>
-    <header>
-        <nav>
-            <ul class="nav-items">
-                <li class="item">Home</li>
-                <li class="item">Recipes</li>
-                <li class="item">Contact</li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <div class="recipe-cards"></div>
-        </section>
-        <section id="popup">
+const commentPopup = document.querySelector('#popup');
+
+const getComments = async (id) => {
+  console.log(id);
+  const html = `
             <div id='comments-container'>
                 <div class='comment-items'>
                     <div class="close-btn-container">
@@ -43,16 +31,14 @@
                         </form>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div>
-            This Project build by <a href="https://github.com/HammadSiddique
-            ">Hammad Siddisue</a> and <a href="https://github.com/ibr5500
-            ">Ibrahim Ahmat</a>
-        </div>
-    </footer>
-</body>
+            </div>`;
+  commentPopup.innerHTML = html;
+  commentPopup.parentElement.classList.add('showComment');
+};
 
-</html>
+const closeComment = document.querySelector('#close');
+closeComment.addEventListener('click', () => {
+  document.getElementById('comments-container').classList.add('hidden');
+});
+
+export default getComments;
