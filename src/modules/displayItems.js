@@ -1,4 +1,5 @@
 import displayPopup from './popupWindow.js';
+import { getLikes, likeInteract } from './like.js';
 
 const displayCards = () => {
   const recipeCards = document.querySelector('.recipe-cards');
@@ -15,13 +16,15 @@ const displayCards = () => {
                    <h2>${meal.strMeal}</h2>
                    <ul>
                        <li><button id=${meal.idMeal}  class="comment-btn" type="button">Comments</button></li>
-                       <li><button class="like-btn"><i class="fa-regular fa-heart"></i><span class="like-count">15</span></button></li>
+                       <li><button class="like-btn"><i class="fa-regular fa-heart"></i><span class="like-count">0</span></button></li>
                    </ul>
                </div>
              </div>`;
         recipeCards.innerHTML = html;
       });
       displayPopup();
+      getLikes();
+      likeInteract();
     });
 };
 
