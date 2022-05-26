@@ -132,7 +132,6 @@ a:hover {
 
 .comments-container {
   width: fit-content;
-  max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
