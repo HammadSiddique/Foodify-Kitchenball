@@ -217,7 +217,7 @@ a:hover {
   gap: 0.5rem;
   color: #264e29;
   border: 2px solid #264e29;
-  border-radius: 10px;
+  border-radius: 8px;
   margin: 5px auto;
 }
 
@@ -233,7 +233,8 @@ a:hover {
 .comments-generator > li {
   padding: 5px;
   list-style: none;
-  border-radius: 0 0 10px 10px;
+
+  /* border-radius: 0 0 10px 10px; */
 }
 
 .add-comment {
