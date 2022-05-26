@@ -1,12 +1,12 @@
-import displayPopup from "./popupWindow.js";
-import { getLikes, likeInteract } from "./like.js";
+import displayPopup from './popupWindow.js';
+import { getLikes, likeInteract } from './like.js';
 
 const displayCards = () => {
-  const recipeCards = document.querySelector(".recipe-cards");
-  fetch("https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegetarian")
+  const recipeCards = document.querySelector('.recipe-cards');
+  fetch('https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegetarian')
     .then((response) => response.json())
     .then((data) => {
-      let html = "";
+      let html = '';
       data.meals.forEach((meal) => {
         html += `<div class="card" id="${meal.idMeal}">
                <div class="card-img">
