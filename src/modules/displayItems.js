@@ -1,13 +1,13 @@
-import displayPopup from "./popupWindow.js";
+import displayPopup from './popupWindow.js';
 
 const displayCards = () => {
-    const recipeCards = document.querySelector('.recipe-cards');
-    fetch('https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegetarian')
-        .then((response) => response.json())
-        .then((data) => {
-            let html = '';
-            data.meals.forEach((meal) => {
-                html += `<div class="card" id="${meal.idMeal}">
+  const recipeCards = document.querySelector('.recipe-cards');
+  fetch('https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegetarian')
+    .then((response) => response.json())
+    .then((data) => {
+      let html = '';
+      data.meals.forEach((meal) => {
+        html += `<div class="card" id="${meal.idMeal}">
                <div class="card-img">
                    <img src="${meal.strMealThumb}" alt="${meal.strMeal}">
                </div>
@@ -19,10 +19,10 @@ const displayCards = () => {
                    </ul>
                </div>
              </div>`;
-                recipeCards.innerHTML = html;
-            });
-            displayPopup();
-        });
+        recipeCards.innerHTML = html;
+      });
+      displayPopup();
+    });
 };
 
 export default displayCards;
