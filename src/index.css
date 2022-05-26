@@ -52,9 +52,6 @@ a:hover {
   transform: scale(1.2, 1.2);
 }
 
-
-/* --------------------------- Recipe card styling --------------------------- */
-
 .recipe-cards {
   display: flex;
   flex-wrap: wrap;
