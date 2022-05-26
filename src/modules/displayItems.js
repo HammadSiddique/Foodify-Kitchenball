@@ -1,8 +1,11 @@
 import displayPopup from './popupWindow.js';
 import { getLikes, likeInteract } from './like.js';
+import itemsCounter from './itemCounter.js';
 
-const displayCards = () => {
-  const recipeCards = document.querySelector('.recipe-cards');
+const recipeCount = document.querySelector('.item-count');
+const recipeCards = document.querySelector('.recipe-cards');
+
+const displayCards = async () => {
   fetch('https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegetarian')
     .then((response) => response.json())
     .then((data) => {
@@ -25,6 +28,7 @@ const displayCards = () => {
       displayPopup();
       getLikes();
       likeInteract();
+      itemsCounter(data.meals, recipeCount);
     });
 };
 
