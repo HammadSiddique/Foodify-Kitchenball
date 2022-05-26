@@ -4,19 +4,20 @@
 
 import commentsCounter from '../modules/testFuncs.js';
 
-describe('Testign the comments counter', () => {
+describe('Testing the comments counter', () => {
   const emptyList = [];
 
-  const commentsList = [{
-    username: 'Hammad',
-    creation_date: '2022-05-25',
-    comment: 'Test 1',
-  },
-  {
-    username: 'Ibrahim',
-    creation_date: '2022-05-26',
-    comment: 'Test 2',
-  },
+  const commentsList = [
+    {
+      username: 'Hammad',
+      creation_date: '2022-05-25',
+      comment: 'Test 1',
+    },
+    {
+      username: 'Ibrahim',
+      creation_date: '2022-05-26',
+      comment: 'Test 2',
+    },
   ];
 
   const count = commentsCounter(commentsList);
