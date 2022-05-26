@@ -4,7 +4,7 @@
     "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
     "private": true,
     "scripts": {
-        "test": "jest",
+        "test": "jest --coverage",
         "watch": "jest --watch .js",
         "start": "webpack serve --open",
         "build": "webpack"
@@ -31,6 +31,7 @@
         "eslint-config-airbnb-base": "^14.2.1",
         "eslint-plugin-import": "^2.26.0",
         "html-webpack-plugin": "^5.5.0",
+        "jest": "^28.1.0",
         "style-loader": "^3.3.1",
         "stylelint": "^13.13.1",
         "stylelint-config-standard": "^21.0.0",
@@ -41,8 +42,8 @@
         "webpack-dev-server": "^4.8.1"
     },
     "dependencies": {
-        "lodash": "^4.17.21",
+        "babel-loader": "^8.2.5",
         "jest-environment-jsdom": "^28.0.2",
-        "babel-loader": "^8.2.5"
+        "lodash": "^4.17.21"
     }
 }

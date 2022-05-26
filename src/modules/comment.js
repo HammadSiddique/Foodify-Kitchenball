@@ -3,7 +3,7 @@ const appKey = 'TVh1v8c5aHUNyfocTFww';
 
 const commentsHeader = document.querySelector('.comments-container h4');
 
-const commentCounter = (count) => count + 1;
+const counter = (count) => count + 1;
 
 const getComments = async (id) => {
   let count = 0;
@@ -16,7 +16,7 @@ const getComments = async (id) => {
         const commentsList = document.querySelector('.comments-generator');
         commentsList.innerHTML = '';
         json.forEach((item) => {
-          count = commentCounter(count);
+          count = counter(count);
           const newComment = document.createElement('li');
           if (count % 2 === 0) {
             newComment.classList.add('row-bg');
