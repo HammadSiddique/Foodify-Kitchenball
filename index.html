@@ -23,34 +23,57 @@
         <section>
             <div class="recipe-cards"></div>
         </section>
-        <section id="popup">
-            <div id='comments-container'>
-                <div class='comment-items'>
-                    <div class="close-btn-container">
-                        <i id="close" class="fa-solid fa-xmark"></i>
+        <section class="popup-container hidden">
+            <div class="popup-window">
+                <div class="close-btn">
+                    <i id="close" class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="popup-image">
+                    <img src="." alt="popup-image">
+                </div>
+                <div class="item-info">
+                    <h3 class="dish-name"></h3>
+                    <p class="recipe"></p>
+                </div>
+                <div class="comments-container">
+                    <h4></h4>
+                    <div class="comment-content">
+                        <ul class="comments-generator"></ul>
                     </div>
-                    <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" />
-                    <h2 class='dish-name'>Grilled Steak</h2>
-                    <p class='recipe-descip'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <h3 class='comment-header'>Comments</h3>
-                    <div id="commets-generator"></div>
-                    <div class="add-new-comment">
-                        <h2 class="form-header">Add a Comment</h2>
-                        <form class="form">
-                            <input class="name" type="text" name="name" placeholder="Your name" pattern="[a-zA-Z ]{1,30}" required>
-                            <textarea class="new-comment" name="comment" placeholder="Write your comment here" pattern="[a-zA-Z9-0 ]{1,200}" required></textarea>
-                            <input class="btn" type="submit" value="Comment" />
-                        </form>
-                    </div>
+                    <span id="comments-spinner" class="spinner"></span>
+                </div>
+                <div class="add-comment">
                 </div>
             </div>
         </section>
+        <!-- <section>
+            <div id="popup">
+                <div id='comments-container'>
+                    <div class='comment-items'>
+                        <div class="popup-header">
+                            <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt=" " />
+                            <i id="close" class="fa-solid fa-xmark "></i>
+                        </div>
+                        <h2 class='dish-name'>Grilled Steak</h2>
+                        <p class='recipe-descip'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <h3 class='comment-header'>Comments</h3>
+                        <div id="commets-generator "></div>
+                        <div class="add-new-comment ">
+                            <h2 class="form-header ">Add a Comment</h2>
+                            <form class="form ">
+                                <input class="name " type="text" name="name " placeholder="Your name " pattern="[a-zA-Z ]{1,30} " required>
+                                <input class="new-comment " type="text" name=" comment " placeholder="Write your comment here " pattern="[a-zA-Z9-0 ]{1,150} " required>
+                                <input class="btn " type="submit " value="Comment " />
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
     </main>
     <footer>
         <div>
-            This Project build by <a href="https://github.com/HammadSiddique
-            ">Hammad Siddisue</a> and <a href="https://github.com/ibr5500
-            ">Ibrahim Ahmat</a>
+            This Project build by <a href="https://github.com/HammadSiddique ">Hammad Siddisue</a> and <a href="https://github.com/ibr5500 ">Ibrahim Ahmat</a>
         </div>
     </footer>
 </body>
