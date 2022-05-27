@@ -1,5 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
+![capstone2a](https://user-images.githubusercontent.com/67911212/170739714-f1f1df25-d467-40f9-92dc-aa3e425f2ec0.jpg)
+
+
 # JavaScript group capstone: Foodify Kitchenball
 
 ## Description:
