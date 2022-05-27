@@ -1,17 +1,21 @@
 import './index.css';
 import displayCards from './modules/displayItems.js';
 
+<<<<<<< HEAD
 const mainMenu = document.querySelector('.nav-items');
 const closeMenu = document.querySelector('.closeMenu');
 const openMenu = document.querySelector('.openMenu');
 const menuItems = document.querySelectorAll('nav .nav-items li');
 
+=======
+>>>>>>> dev
 const contactBtn = document.querySelector('#contactSection');
 const recipesSection = document.querySelector('#recipesSection');
 
 const recipes = document.querySelector('#recipe-section');
 const contact = document.querySelector('#contact');
 
+<<<<<<< HEAD
 openMenu.addEventListener('click', () => {
   mainMenu.style = 'display: flex; top:0;';
 });
@@ -26,6 +30,8 @@ menuItems.forEach((item) => {
   });
 });
 
+=======
+>>>>>>> dev
 contactBtn.addEventListener('click', () => {
   recipes.classList.add('hidden');
   contact.classList.remove('hidden');
