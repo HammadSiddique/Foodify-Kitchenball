@@ -29,15 +29,21 @@ Please [click](https://drive.google.com/file/d/12zMiJL3Q1pRRYAOLt1LZQI2cSEfcqXL9
 
 ## Getting Started
 
-### steps to run the project
+### Steps to run the project
 
-#### 1 - Install npm.
+#### 1 - Git Clone.
+
+```
+git clone https://github.com/HammadSiddique/Foodify-Kitchenball.git
+```
+
+#### 2 - Install npm.
 
 ```
 npm install
 ```
 
-#### 2 - run the project
+#### 3 - run the project
 
 ```
 npm start
@@ -48,7 +54,7 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 - HTML & CSS & JS
-- npm
+- Node.js (npm)
 - API
 
 ### Setup
@@ -60,8 +66,8 @@ To get a local copy up and running follow these simple example steps.
 ### Run tests
 
 - Open your terminal, move to the directory where you want to clone the app (i.e cd Documents)
-- Enter git clone git@github.com:ibr5500.github.io/Leader-Board/
-- Change to the directory you just clone into (i.e cd Leader-Board)
+- Enter git clone https://github.com/HammadSiddique/Foodify-Kitchenball.git
+- Change to the directory you just clone into (i.e cd Foodify-Kitchenball)
 - Open index.html from the list of files in your left handside
 - Right click on your opened index.html file and launch the live server to preview
 - Include any possible changes and run "git add ."
@@ -91,6 +97,11 @@ To get a local copy up and running follow these simple example steps.
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
+
+## Attribution
+
+- [Freepik](https://www.freepik.com/) for banners.
+- [MealDB API](https://www.themealdb.com/api.php) for recipes.
 
 ## Show your support
 
