@@ -2,11 +2,11 @@
 
 # JavaScript group capstone: Foodify Kitchenball
 
-## description:
+## Description:
 
 > - Foodify Kitchenball web app that contains the best vegetarian recipes.
 
-> In this project we have:
+### In this project we have:
 
 > - We have created a recipes app for the vegetarian foods.
 
@@ -21,7 +21,7 @@
 
 ## Live Demo (if available)
 
-Please [click](https://hammadsiddique.github.io/Foodify-Kitchenball/) for the live demo.
+Please [click](https://hammadsiddique.github.io/Foodify-Kitchenball/index.html) for the live demo.
 
 ## Getting Started
 
