@@ -23,18 +23,45 @@ body {
   background-color: var(--bg-color);
 }
 
-.nav-items {
+nav .openMenu {
   display: flex;
+  flex-direction: row-reverse;
+  font-size: 1.5rem;
+  margin: 20px;
+  cursor: pointer;
+  color: #236128;
+}
+
+nav .nav-items {
+  position: fixed;
+  height: 100vh;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   list-style: none;
-  padding: 2%;
-  background-color: #fff;
+  background: rgba(235, 255, 161, 0.9);
+  transition: top 1s ease 0s;
+  display: none;
 }
 
-.item {
-  font-size: 1rem;
+nav .closeMenu {
+  font-size: 1.7rem;
+}
+
+nav .nav-items .closeMenu {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.item a {
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -77,6 +104,7 @@ body {
 .header-img {
   background-image: url("./assets/bannercapstone.png");
   height: 500px;
+  margin: 20px 0;
 }
 
 .tagline h2 {
@@ -405,19 +433,30 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .nav-items {
+  nav .openMenu {
+    display: none;
+  }
+
+  nav .nav-items .closeMenu {
+    display: none;
+    cursor: pointer;
+  }
+
+  nav .nav-items {
     display: flex;
+    flex-direction: row;
+    height: auto;
     align-items: center;
     justify-content: center;
     gap: 3rem;
     list-style: none;
     padding: 2%;
-    background-color: white;
+    background-color: #fff;
+    margin: auto;
   }
 
-  .item {
+  .item a {
     font-size: 1rem;
-    cursor: pointer;
   }
 
   footer {
