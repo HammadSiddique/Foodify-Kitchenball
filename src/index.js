@@ -3,6 +3,7 @@ import displayCards from './modules/displayItems.js';
 
 const contactBtn = document.querySelector('#contactSection');
 const recipesSection = document.querySelector('#recipesSection');
+const tagline = document.querySelector('.tagline');
 
 const recipes = document.querySelector('#recipe-section');
 const contact = document.querySelector('#contact');
@@ -15,11 +16,13 @@ const menuItems = document.querySelectorAll('nav .nav-items li');
 contactBtn.addEventListener('click', () => {
   recipes.classList.add('hidden');
   contact.classList.remove('hidden');
+  tagline.classList.add('hidden');
 });
 
 recipesSection.addEventListener('click', () => {
   contact.classList.add('hidden');
   recipes.classList.remove('hidden');
+  tagline.classList.remove('hidden');
 });
 
 openMenu.addEventListener('click', () => {
