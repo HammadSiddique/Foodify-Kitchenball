@@ -23,6 +23,10 @@
 
 Please [click](https://hammadsiddique.github.io/Foodify-Kitchenball/index.html) for the live demo.
 
+## Project Documentation
+
+Please [click](https://drive.google.com/file/d/12zMiJL3Q1pRRYAOLt1LZQI2cSEfcqXL9/view?usp=sharing) here for project doucmentation.
+
 ## Getting Started
 
 ### steps to run the project
