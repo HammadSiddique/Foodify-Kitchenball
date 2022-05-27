@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Foodify Kitchenball</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="openMenu"><i class="fa-solid fa-bars"></i></div>
+            <ul class="nav-items">
+                <li class="item"><a class="nav-link" href="./index.html">Home</a></li>
+                <li class="item"><a class="nav-link item-count" href="#recipe-section" id="recipesSection">Recipes</a></li>
+                <li class="item"><a class="nav-link" href="#contact" id="contactSection">Contact</a></li>
+                <li class="closeMenu"><i class="fa-solid fa-xmark"></i></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="header-img">
+            </div>
+            <div class="tagline">
+                <h2>Get the best vegetarian<br> recipes</h2>
+            </div>
+            <div id="recipe-section" class="recipe-cards"></div>
+        </section>
+        <section class="popup-container hidden">
+            <div class="popup-window">
+                <div class="close-btn">
+                    <i id="close" class="fa-solid fa-xmark"></i>
+                </div>
+                <div class="popup-image">
+                    <img src="." alt="popup-image">
+                </div>
+                <div class="item-info">
+                    <h3 class="dish-name"></h3>
+                    <p class="recipe"></p>
+                </div>
+                <div class="comments-container">
+                    <h4></h4>
+                    <div class="comment-content">
+                        <ul class="comments-generator"></ul>
+                    </div>
+                    <span id="comments-spinner" class="spinner"></span>
+                </div>
+                <div class="add-comment">
+                </div>
+            </div>
+        </section>
+    </main>
+    <section id="contact">
+        <div class="contact-items">
+            <h2 class="contact-title">Contact Us</h2>
+            Do you have any questions or you just want to say "Hello"?
+            <br/> You can reach out to us!
+            <br/> LinkedIn or Twitter
+            <div class="contact-info">
+                <ul>
+                    <li>Hammad Siddique:
+                        <a class="contact-icon" href="https://www.linkedin.com/in/hammad-siddique-6a5469231/"> <i class="fa-brands fa-linkedin"></i></a>
+                        <a class="contact-icon" href="https://twitter.com/hs_devv"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="contact-icon" href="https://github.com/HammadSiddique"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                    <li>Ibrahim Ahmat:
+                        <a class="contact-icon" href="https://www.linkedin.com/in/ibrahim-ahmat-b5513b1a6/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a class="contact-icon" href="https://twitter.com/ibr_ahmat"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="contact-icon" href="https://github.com/ibr5500"><i class="fa-brands fa-github"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div>
+            This Project build by <a href="https://github.com/HammadSiddique ">Hammad Siddique</a> and <a href="https://github.com/ibr5500 ">Ibrahim Ahmat</a>
+        </div>
+    </footer>
+</body>
+
+</html>
