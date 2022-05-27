@@ -29,22 +29,12 @@ body {
   justify-content: center;
   gap: 1rem;
   list-style: none;
-  background: rgba(235, 255, 161, 0.9);
-  display: none;
+  padding: 2%;
+  background-color: #fff;
 }
 
-nav .closeMenu {
-  font-size: 1.7rem;
-}
-
-nav .nav-items .closeMenu {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-.item a {
-  font-size: 1.5rem;
+.item {
+  font-size: 1rem;
   cursor: pointer;
 }
 
@@ -184,9 +174,6 @@ nav .nav-items .closeMenu {
   align-items: center;
 }
 
-
-/* popup comment section */
-
 .popup-container {
   position: fixed;
   width: 100%;
@@ -282,6 +269,8 @@ nav .nav-items .closeMenu {
 .comments-generator > li {
   padding: 5px;
   list-style: none;
+
+  /* border-radius: 0 0 10px 10px; */
 }
 
 .userName {
