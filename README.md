@@ -24,7 +24,7 @@
 
 ## Live Demo (if available)
 
-Please [click](https://HammadSiddique.github.io/Foodify-Kitchenball/) for the live demo.
+Please [click](https://hammadsiddique.github.io/Foodify-Kitchenball/) for the live demo.
 
 ## Getting Started
 ### steps to run the project
